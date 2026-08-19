@@ -1,0 +1,6 @@
+{
+  "name": "zumano.ch | Atelier Zäzilia Jenni",
+  "description": "Nordisch inspiriertes Schweizer Kunst-Atelier für Aquarell, Hand-Lettering, Schilder & personalisierte Kunstwerke mit Online-Shop, interaktivem Bildideen-Customizer, Video-Einblicken und 3 Design-Stilen.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
