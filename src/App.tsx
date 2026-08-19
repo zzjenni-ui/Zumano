@@ -26,7 +26,6 @@ import { CheckoutModal } from './components/CheckoutModal';
 import { PhpHostingGuideModal } from './components/PhpHostingGuideModal';
 import { Footer } from './components/Footer';
 import { CheckCircle2, ShoppingBag } from 'lucide-react';
-import confetti from 'canvas-confetti';
 
 export default function App() {
   // Theme state: default to 'nordic-minimal' (Warm Nordic Sage & Ochre)

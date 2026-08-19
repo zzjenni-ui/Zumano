@@ -13,7 +13,7 @@ import {
   FileVideo,
   Volume2,
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { triggerConfetti } from '../lib/confetti';
 import { STUDIO_VIDEOS } from '../data/mockData';
 import { StudioVideo, DesignTheme } from '../types';
 
@@ -75,7 +75,7 @@ export const StudioVideosSection: React.FC<StudioVideosSectionProps> = ({
     setUploadedFile(null);
     setPreviewUrl(null);
 
-    confetti({
+    triggerConfetti({
       particleCount: 60,
       spread: 70,
       origin: { y: 0.6 },

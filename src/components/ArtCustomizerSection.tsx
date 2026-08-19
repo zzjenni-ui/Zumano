@@ -17,7 +17,7 @@ import {
   Coins,
   Share2,
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { triggerConfetti } from '../lib/confetti';
 import { GeneratedArtIdea, DesignTheme } from '../types';
 
 interface ArtCustomizerSectionProps {
@@ -98,7 +98,7 @@ export const ArtCustomizerSection: React.FC<ArtCustomizerSectionProps> = ({
       const data = await res.json();
       if (data.success && data.idea) {
         setGeneratedIdea(data.idea);
-        confetti({
+        triggerConfetti({
           particleCount: 40,
           spread: 60,
           origin: { y: 0.6 },
@@ -134,7 +134,7 @@ export const ArtCustomizerSection: React.FC<ArtCustomizerSectionProps> = ({
       if (data.success && data.updatedIdea) {
         setGeneratedIdea(data.updatedIdea);
         setRefinementInput('');
-        confetti({
+        triggerConfetti({
           particleCount: 30,
           spread: 45,
           origin: { y: 0.6 },
@@ -564,7 +564,7 @@ export const ArtCustomizerSection: React.FC<ArtCustomizerSectionProps> = ({
                   <button
                     id="btn-customizer-order-inquiry"
                     onClick={() => {
-                      confetti({
+                      triggerConfetti({
                         particleCount: 70,
                         spread: 70,
                         origin: { y: 0.7 },

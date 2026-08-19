@@ -12,7 +12,7 @@ import {
   CheckCircle2,
   Heart,
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { triggerConfetti } from '../lib/confetti';
 import { INSTAGRAM_POSTS } from '../data/mockData';
 import { DesignTheme } from '../types';
 
@@ -76,7 +76,7 @@ export const SocialAndContactSection: React.FC<SocialAndContactSectionProps> = (
     } finally {
       setIsSubmitting(false);
       setSubmitted(true);
-      confetti({
+      triggerConfetti({
         particleCount: 60,
         spread: 70,
         origin: { y: 0.6 },

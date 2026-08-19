@@ -10,7 +10,7 @@ import {
   ArrowRight,
   Phone,
 } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { triggerConfetti } from '../lib/confetti';
 import { CartItem, DesignTheme } from '../types';
 
 interface CheckoutModalProps {
@@ -76,7 +76,7 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
     } finally {
       setIsProcessing(false);
       setStep('confirmed');
-      confetti({
+      triggerConfetti({
         particleCount: 80,
         spread: 80,
         origin: { y: 0.5 },
